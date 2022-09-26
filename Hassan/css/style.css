@@ -117,3 +117,22 @@ body {
 
   }
 }
+
+/** Responsiv Design **/
+@media only screen and (max-width:767px){
+  .main{
+    width: 320px;
+  }
+  .menu-column{
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .single-menu{
+    flex-direction: column;
+  }
+  .single-menu img {
+    margin-bottom: 25px;
+
+  }
+
+}

@@ -92,3 +92,27 @@ body {
   font-weight: 600;
   font-style: italic;
 }
+
+/** Responsiv Design **/
+@media only screen and (min-width:990px) and (max-width:1200px){
+  .main{
+    width: 970px;
+  }
+
+}
+
+/** Responsiv Design **/
+@media only screen and (min-width:768px) and (max-width:991px){
+  .main{
+    width: 750px;
+  }
+  .single-menu{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  .single-menu img {
+    margin-bottom: 25px;
+
+  }

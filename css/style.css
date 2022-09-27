@@ -1,0 +1,14 @@
+.container{
+    border: 1px solid black;
+    min-height: 500px;
+}
+
+ul {
+    display: flex;
+    
+}
+
+.ul > li {
+    display: flex;
+    margin: 20px 30px;
+}

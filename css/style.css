@@ -4,11 +4,35 @@
 }
 
 ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     
 }
 
 .ul > li {
-    display: flex;
+    display: grid;
     margin: 20px 30px;
+    
+    text-align: center;
+}
+
+#nu{
+    margin: 30px;
+    width: 130px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+.meny{
+    grid-column: 2/4;
+}
+.pizzan{
+    grid-column: 4/6;
+}
+.kampanj{
+    grid-column: 6/8;
+}
+.contact{
+    grid-column: 8/10;
 }

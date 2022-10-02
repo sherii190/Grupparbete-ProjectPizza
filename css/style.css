@@ -40,6 +40,22 @@
         height: 250px;
         background-color: skyblue;
     }
+
+    .grid{
+        height: 2;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        margin-top: 10px;
+        grid-column-gap: 20px;
+    }
+    .grid-item{
+        border: 1px solid black;
+        text-align: center;
+        height: 150px;
+        margin: 10px;
+        
+        
+    }
     
     #footer{
         width: 90%;

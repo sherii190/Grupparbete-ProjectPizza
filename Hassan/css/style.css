@@ -1,138 +1,135 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-body {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  color: #222;
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+body{
+  font-family: 'Montserrat', sans-serif;
 }
 
-.main {
+.food-area {
+  background-color: #f4f4f4;
+  padding: 100px 0;
+}
+.container {
   width: 1170px;
-  margin: 100px auto;
+  margin: 0 auto;
 }
-.section-title {
+.title {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
-.section-title h2 {
-  text-transform: capitalize;
-  font-size: 35px;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 20px;
-  margin-bottom: 10px;
+.title p {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 22px;
 }
-.section-title h2:before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 3px;
-  background-color: #00875c;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+.title h4 {
+text-transform: uppercase;
+font-size: 40px;
+margin-top: 5px;
 }
 
-.menus {
+.foods {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
-.menu-column {
-  width: 31%;
+.single-food {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  flex-basis: 31%;
 }
-.menu-column h4 {
-  text-transform: capitalize;
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 20px;
+.food-img {
   position: relative;
-  padding-bottom: 10px;
+  height: 220px;
+  overflow: hidden;
+  width: 100%;
 }
-.menu-column h4:before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 2px;
-  background-color: #00875c;
-  bottom: 0;
-}
-.single-menu {
-  display: flex;
-  align-items: center;
-  margin-top: 40px;
-}
-.single-menu img {
-  border-radius: 50%;
-  max-width: 110px;
-  border: 1px dashed #ddd;
-  padding: 3px;
-  margin-right: 15px;
+.food-img img {
+  border-radius: 12px 12px 0 0;
   transition: .3s;
 }
-.single-menu:hover img{
-    transform: rotate(360deg);
-}
-.single-menu .menu-content h5 {
+.food-img h4 {
+  position: absolute;
+  left: 0;
+  top: -50px;
+  background-color: #ff7720;
+  color: #fff;
   text-transform: capitalize;
+  padding: 10px 20px;
   font-size: 22px;
-  font-weight: 500;
-  border-bottom: 1px dashed #222;
-  padding-bottom: 5px;
+  font-weight: 600;
+  transition: .3s;
+}
+.single-food:hover .food-img h4 {
+  top: 0;
+}
+.single-food:hover img {
+transform: scale(1.1) rotate(3deg);
+}
+
+.food-list {
+  padding: 20px;
+  list-style: none;
+}
+.food-list li {
+  font-weight: 400;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 10px;
   margin-bottom: 10px;
 }
-.single-menu .menu-content h5 span {
-  color: tomato;
-  float: right;
+.food-list li:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
   font-weight: 600;
-  font-style: italic;
 }
-
-/** Responsiv Design **/
-@media only screen and (min-width:990px) and (max-width:1200px){
-  .main{
-    width: 970px;
-  }
-
+.single-food a {
+  text-decoration: navajowhite;
+  background-color: #ff7720;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+  padding: 10px 20px;
+  width: 160px;
+  margin: 20px auto 25px auto;
+  border-radius: 9px;
+  transition: .3s;
 }
-
-/** Responsiv Design **/
-@media only screen and (min-width:768px) and (max-width:991px){
-  .main{
-    width: 750px;
-  }
-  .single-menu{
-    display: flex;
-    align-items: center;
-    margin-top: 40px;
-    flex-direction: column;
-  }
-  .single-menu img {
-    margin-bottom: 25px;
-
+.single-food a:hover {
+  background-color: orange;
+}
+/**Responsive desktop and above **/
+@media only screen and (min-width:992px) and (max-width:1170px) {
+  .container{
+      width: 970px;
   }
 }
-
-/** Responsiv Design **/
-@media only screen and (max-width:767px){
-  .main{
-    width: 320px;
+/**Responsive Tablet and above **/
+@media only screen and (min-width:768px) and (max-width:991px) {
+  .container{
+      width: 750px;
   }
-  .menu-column{
-    width: 100%;
-    margin-bottom: 60px;
+  .single-food{
+      flex-basis: 49%;
   }
-  .single-menu{
-    flex-direction: column;
+}
+/**Responsive Phone and above **/
+@media only screen and (max-width:767px) {
+  .container{
+      width: 350px;
   }
-  .single-menu img {
-    margin-bottom: 25px;
-
+  .single-food{
+      flex-basis: 100%;
   }
-
 }

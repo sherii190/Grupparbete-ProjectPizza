@@ -35,6 +35,11 @@
       text-align: center;
       
     }
+
+    .text{
+        height: 250px;
+        background-color: skyblue;
+    }
     
     #footer{
         width: 90%;

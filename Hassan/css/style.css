@@ -122,7 +122,7 @@ transform: scale(1.1) rotate(3deg);
 /**Responsive Phone and above **/
 @media only screen and (max-width:767px) {
   .container{
-      width: 350px;
+      width: 320px;
   }
   .single-food{
       flex-basis: 100%;

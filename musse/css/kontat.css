@@ -1,0 +1,38 @@
+
+
+#container{
+    /* border: 1px solid black; */
+    /* position: fixed; */
+    width: 100%;
+    margin-top: 100px;
+    display: flex
+    
+    
+}
+
+.box2{
+    /* border: 1px solid black; */
+    margin: auto;
+    width: 50%;
+    height: 200px;
+}
+/* .container1{
+    border: 1px solid black;
+    width: 100%;
+} */
+body{
+    background-color: aliceblue;
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}

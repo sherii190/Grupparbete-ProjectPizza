@@ -181,7 +181,7 @@ transform: scale(1.1) rotate(3deg);
   margin-right: 30px;
 }
 
-.subscribe{
+#subscribe{
   background-color: rgb(200, 0, 0 );
   color: white;
   border: none;
@@ -192,7 +192,7 @@ transform: scale(1.1) rotate(3deg);
   
 }
 
-.join{
+#join{
   background-color: white;
   border-color: rgb(41, 118, 211);
   border-style: solid;

@@ -1,5 +1,4 @@
 
-
 #container{
     /* border: 1px solid black; */
     /* position: fixed; */
@@ -15,6 +14,7 @@
     margin: auto;
     width: 50%;
     height: 200px;
+    margin-bottom: 10px;
 }
 /* .container1{
     border: 1px solid black;
@@ -28,7 +28,8 @@ body{
     padding-bottom:56.25%;
     position:relative;
     height:0;
-}
+    border: 1px solid black;
+    }
 .map-responsive iframe{
     left:0;
     top:0;
@@ -36,3 +37,17 @@ body{
     width:100%;
     position:absolute;
 }
+@media only screen and (min-width:992px) and (max-width:1170px) {
+    .container{
+        width: 970px;
+    }
+  }
+  @media only screen and (min-width:768px) and (max-width:991px) {
+    .container{
+        width: 750px;
+    }
+  }
+  @media only screen and (max-width:767px) {
+    .container{
+        width: 320px;
+    }

@@ -1,61 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online-pizza</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ProjectPizza </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
-  <!--Jag ska börja jobba på framsidan (Kamal)-->
-  <div class="container">
-    <ul class="ul">
-      <li> <a href="/Hassan/Index.html" class="meny">Meny</a></li>
-      <li><a href="" class="pizzan">Hetaste pizzan</a></li>
-      <li><a href="" class="kampanj">Kampanjer</a></li>
-      <li><a href="/musse/html/kontakt.html" class="contact">Kontakt</a></li>
-      <div class="nu"><button id="nu">Beställ Nu</button></div>
 
-  </ul>
-
-    <div class="text">
-      
-        
-
-    </div>
-
-    <div class="grid">
-      <div class="grid-item">1</div>
-      <div class="grid-item">2</div>
-      <div class="grid-item">3</div>
-      <div class="grid-item">4</div>
-      <div class="grid-item">5</div>
-  </div>
-
-  <section id="footer">
-    <link rel="stylesheet" href="/header & footer/style.css">
-    <div class="footer1"><P>Vi är sveriges bästa Pizzabagarna! <br>
-        Med stolthet kan vi säga <br> att vi sedan 1986 haft samma recept!
-    </P></div>
-    <div class="footer2"><h4>Snabba länkar</h4>
-    <h6><a href="">Meny</a><br>
-        <a href="">Hetaste pizzan</a><br>
-        <a href="">Kampanjer</a><br>
-        <a href="">Kontakt</a></h6>
-    </div>
-    <div class="button">
-    <button id="subscribe">SUBSCRIBE</button>
-    <button id="join">JOIN</button>
-</div>
-   
-</section>
-</div>
-
+    <header>
+        <div class="nav-container">
+          <link rel="stylesheet" href="./header & footer/style.css">
+            <nav class="nav-checkbox">
+                <a href="./Index.html" class="logo">ProjectPizza</a>
+                <input id="tab-nav" type="checkbox" class="tab-nav" name="tabs">
+                <label for="tab-nav" class="tab-nav-label">Meny</label>
+                <ul class="tab-content">
+                  <li><a href="./Hassan/Index.html">Meny</a></li>
+                  <li><a href="#">Hetaste Pizzan</a></li>
+                  <li><a href="#">Kampanjer</a></li>
+                  <li><a href="./musse/html/kontakt.html">Contact</a></li>
+                  <li><a href="https://www.foodora.se/en/restaurant/ctr8/snabbpizza-vallentuna" target="_blank">Beställ nu</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     
+<section class="home" id="home">
 
+    <div class="content">
+        <h3>ProjectPizza - Din favorit!</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas accusamus tempore temporibus rem amet laudantium animi optio voluptatum. Natus obcaecati unde porro nostrum ipsam itaque impedit incidunt rem quisquam eos!</p>
+        <a href="#" class="btn">Beställ nu</a>
+    </div>
 
-  </div>
-  
+    <div class="image">
+        <img src="./img/pizza.png" alt="">
+    </div>
+ 
+</section>
+
+<section class="popular" id="popular">
+
+    <h1 class="heading"> Våra Mest <span>Populära</span> Pizzor </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <span class="price"> 70kr - 129kr </span>
+            <img src="./img/american.jpeg" alt="">
+            <h3>Amerikansk Pizza</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price"> 70kr - 129kr </span>
+            <img src="./img/seafood.jpeg" alt="">
+            <h3>Skaldjur Pizza</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price"> 70kr - 129kr </span>
+            <img src="./img/specialpizza.webp" alt="">
+            <h3>Special Pizza</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price"> 70kr - 129kr </span>
+            <img src="./img/veggiepizza.jpeg" alt="">
+            <h3>Vegetarisk Pizza</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+    </div>
+    <section id="footer">
+        <link rel="stylesheet" href="./header & footer/style.css">
+        <div class="footer1"><P>Vi är sveriges bästa Pizzabagarna! <br>
+            Med stolthet kan vi säga <br> att vi sedan 1986 haft samma recept!
+        </P></div>
+        <div class="footer2"><h4>Snabba länkar</h4>
+        <h6><a href="">Meny</a><br>
+            <a href="">Hetaste pizzan</a><br>
+            <a href="">Kampanjer</a><br>
+            <a href="">Kontakt</a></h6>
+        </div>
+        <div class="button">
+        <button id="subscribe">SUBSCRIBE</button>
+        <button id="join">JOIN</button>
+    </div>
+    </section>
+</section>
 </body>
 </html>

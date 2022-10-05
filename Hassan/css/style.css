@@ -160,3 +160,46 @@ transform: scale(1.1) rotate(3deg);
       padding: 10px 0;
   }
 }
+
+#footer{
+  width: 90%;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.footer1{
+  grid-column: span 4;
+}
+.footer2{
+  grid-column: span 2;
+}
+.footer3{
+  grid-column: span 4;
+}
+.button{
+  display: flex;
+  margin-right: 30px;
+}
+
+.subscribe{
+  background-color: rgb(200, 0, 0 );
+  color: white;
+  border: none;
+  height: 36px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 20px;
+  
+}
+
+.join{
+  background-color: white;
+  border-color: rgb(41, 118, 211);
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(41, 118, 211 );
+  height: 36px; width: 62px;
+  border-radius: 2px;
+  cursor: pointer;
+  
+}

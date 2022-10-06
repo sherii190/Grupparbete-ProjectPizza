@@ -128,35 +128,3 @@ transform: scale(1.1) rotate(3deg);
       flex-basis: 100%;
   }
 }
-
-/*Navbar Responsive*/
-@media screen and (max-width: 1280px) {
-  .nav-container {
-      width: 100%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .tab-nav-label {
-      display: grid;
-      cursor: pointer;
-      grid-column: 3;
-      padding-right: 10px;
-  }
-  .tab-content {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-column: 1/4;
-      text-align: center;
-      max-height: 0;
-      overflow: hidden;
-      transition: all ease-in-out 0.4s;
-      -o-transition: all ease-in-out 0.4s;
-      -webkit-transition: all ease-in-out 0.4s;
-   }
-  .nav-checkbox input:checked ~ .tab-content {
-      max-height: 400px;
-  }
-  .tab-content li {
-      padding: 10px 0;
-  }
-}
